@@ -1,0 +1,13 @@
+setup repo and heroku
+
+setup paperclip bucket and config
+
+setup backbone
+
+setup auth and auth errors
+
+setup emailer and email database for auth
+
+setup invite system
+
+begin backbone work
