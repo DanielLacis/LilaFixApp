@@ -23,7 +23,7 @@
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
-//= require_tree ./routers
-//= require_tree ./utils
-//= require_tree .
-//= require bootstrap
+// = require_tree ./routers
+// = require_tree ./utils
+// = require_tree .
+// = require bootstrap

@@ -15,3 +15,16 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "bootstrap-datetimepicker";
+h1, h3 {
+  margin-top: 10px;
+}
+
+body {
+  padding-top: 70px;
+  width: 100%;
+  // background-image:
+  // url("https://s3.amazonaws.com/launchassistdev/pillars-of-creation-small.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+}
