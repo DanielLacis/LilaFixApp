@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LilaFixApp</title>
+  <title>LaunchAssist</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
+  <% if current_user %>
+    <script>
+      $(document).ready(function(){
+        LilaFixApp.initialize();
+      });
+    </script>
+  <% end %>
 </head>
 <body>
 
+<%= render partial: 'layouts/header' %>
+<%= render partial: 'layouts/errors' %>
 <%= yield %>
 
 </body>
