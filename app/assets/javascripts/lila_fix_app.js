@@ -14,7 +14,3 @@ window.LilaFixApp = {
     Backbone.history.start();
   }
 };
-
-$(document).ready(function(){
-  LilaFixApp.initialize();
-});
