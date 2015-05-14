@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LaunchAssist</title>
+  <title>LilaFix</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.png' %>
   <% if current_user %>
-    <script>
-      $(document).ready(function(){
-        LilaFixApp.initialize();
-      });
-    </script>
     <script>
       window.LilaFixApp.CURRENT_USER_ID = <%= current_user.id %>
     </script>
