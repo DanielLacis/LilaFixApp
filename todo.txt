@@ -11,3 +11,7 @@ setup emailer and email database for auth
 setup invite system
 
 begin backbone work
+
+have invite email include link that pre-fills email address
+  -make sure email validation is not case sensitive
+
