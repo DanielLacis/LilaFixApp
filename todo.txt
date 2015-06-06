@@ -15,3 +15,6 @@ begin backbone work
 have invite email include link that pre-fills email address
   -make sure email validation is not case sensitive
 
+polymorphic associations for photos for user, child, post
+
+backbone signup and auth
