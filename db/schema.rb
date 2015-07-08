@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609233945) do
+ActiveRecord::Schema.define(version: 20150625212027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "children", force: :cascade do |t|
+    t.string   "name"
+    t.string   "user_id"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "photos", force: :cascade do |t|
     t.string   "photo_file_name"
@@ -28,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150609233945) do
   end
 
   add_index "photos", ["imageable_id"], name: "index_photos_on_imageable_id", using: :btree
+  add_index "photos", ["imageable_type"], name: "index_photos_on_imageable_type", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        null: false

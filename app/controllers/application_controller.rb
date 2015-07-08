@@ -48,4 +48,10 @@ class ApplicationController < ActionController::Base
       redirect_to new_session_url
     end
   end
+
+  private
+
+  def photo_params
+    params.require('photo').permit(:photo, :imageable_id, :imageable_type, :photo_file_name, :photo_content_type, :photo_file_size, :photo_updated_at)
+  end
 end

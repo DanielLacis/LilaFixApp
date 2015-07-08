@@ -5,10 +5,10 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-  <%= favicon_link_tag 'favicon.png' %>
+  <%# favicon_link_tag 'favicon.png' %>
   <% if current_user %>
     <script>
-      window.LilaFixApp.CURRENT_USER_ID = <%= current_user.id %>
+      window.LilaFixApp._current_user_id = <%= current_user.id %>
     </script>
   <% end %>
 </head>

@@ -8,7 +8,7 @@ LilaFixApp.Routers.Router = Backbone.Router.extend({
   },
 
   childrenIndex: function() {
-
+    
   },
 
 
