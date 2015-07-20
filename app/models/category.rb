@@ -1,16 +1,15 @@
 # == Schema Information
 #
-# Table name: children
+# Table name: categories
 #
 #  id          :integer          not null, primary key
-#  name        :string
-#  user_id     :string
+#  title       :string
+#  child_id    :integer
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
 #
 
-class Child < ActiveRecord::Base
-  has_many :categories
-  has_one :photo, as: :imageable
+class Category < ActiveRecord::Base
+  belongs_to :child
 end

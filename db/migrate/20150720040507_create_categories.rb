@@ -1,6 +1,6 @@
-class CreateCateogories < ActiveRecord::Migration
+class CreateCategories < ActiveRecord::Migration
   def change
-    create_table :cateogories do |t|
+    create_table :categories do |t|
       t.string :title
       t.integer :child_id
       t.text :description
